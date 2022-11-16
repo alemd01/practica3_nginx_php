@@ -1,5 +1,4 @@
-# 
-Práctica: Instalación de nginx con PHP
+# Práctica: Instalación de nginx con PHP
 
 1. Entrega la URL del repositorio GitHub donde has alojado la práctica.
 
