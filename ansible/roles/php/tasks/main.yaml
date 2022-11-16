@@ -1,0 +1,17 @@
+- name: Instalamos php
+  apt: 
+    pkg: php
+
+- name: Instalamos php-fpm
+  apt:
+    pkg: php7.4-fpm
+
+- name: Copiamos el archivo info.php
+  copy:
+    src: info.php
+    dest: /{{item["datos"]["documentroot"]}}/
+    owner: www-data
+    group: www-data
+    mode: 0644
+  with_items:
+    - "{{virtualhosts}}"
